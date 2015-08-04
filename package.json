@@ -1,0 +1,27 @@
+{
+  "name": "eot-parser",
+  "version": "1.0.0",
+  "description": "EOT font parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyjansson/eot-parser.git"
+  },
+  "keywords": [
+    "eot",
+    "parser",
+    "font"
+  ],
+  "author": "Andy Jansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andyjansson/eot-parser/issues"
+  },
+  "homepage": "https://github.com/andyjansson/eot-parser#readme",
+  "dependencies": {
+    "es6-promise": "^2.3.0"
+  }
+}
