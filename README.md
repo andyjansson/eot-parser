@@ -1,6 +1,6 @@
 # EOT Parser
 
-[EOT Parser] reads and returns metadata from [Embedded OpenType] (EOT) fonts.
+[EOT Parser] reads and returns metadata from [Embedded OpenType] \(EOT) fonts.
 
 ## Usage
 
@@ -22,7 +22,7 @@ parser('OpenSans-400-Regular.eot').then(function (result) {
 });
 ```
 
-```js
+```json
 {
 	...
 	"italic": false,
