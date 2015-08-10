@@ -11,6 +11,18 @@ var codePageRange1 = require('./lib/codepagerange/codepagerange1.js');
 var codePageRange2 = require('./lib/codepagerange/codepagerange2.js');
 
 module.exports = function (data) {
+	if (typeof data === 'string') {
+		return new Promise(function (resolve, reject) {
+			fs.readFile(data, function (error, rawdata) {
+				if (error) {
+					reject(error);
+				} else {
+					resolve(module.exports(rawdata));
+				}
+			});
+		});
+	}
+
 	return new Promise(function (resolve, reject) {
 		var magicNumber = data.readUInt16LE(34);
 		var version = data.readUInt32LE(8);
