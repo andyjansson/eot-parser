@@ -1,0 +1,45 @@
+{
+	"eotSize": 278764,
+	"fontDataSize": 278452,
+	"version": 131073,
+	"panose": {
+		"familyType": "Text and display",
+		"serifStyle": "Normal sans serif",
+		"weight": "Book",
+		"proportion": "Modern",
+		"contrast": "Very low",
+		"strokeVariation": "Gradual/vertical",
+		"armStyle": "Straight arms/wedge",
+		"letterform": "Normal/contact",
+		"midline": "Standard/trimmed",
+		"xHeight": "Constant/large"
+	},
+	"charset": "Default",
+	"italic": false,
+	"weight": {
+		"value": 400,
+		"description": "Normal"
+	},
+	"type": "Installable Embedding",
+	"unicodeRange1": [
+		"Basic Latin",
+		"Latin-1 Supplement",
+		"Latin Extended-A",
+		"Latin Extended Additional"
+	],
+	"unicodeRange2": [
+		"Superscripts And Subscripts"
+	],
+	"unicodeRange3": [],
+	"unicodeRange4": [],
+	"codePageRange1": [
+		"Reserved for OEM",
+		"Arabic; ASMO 708"
+	],
+	"codePageRange2": [],
+	"familyName": "SourceSansPro-Regular",
+	"styleName": "Regular",
+	"versionName": "Version 1.050;PS 1.000;hotconv 1.0.70;makeotf.lib2.5.5900",
+	"fullName": "SourceSansPro-Regular",
+	"rootString": ""
+}

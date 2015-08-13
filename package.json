@@ -4,7 +4,7 @@
   "description": "EOT font parser",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/andyjansson/eot-parser#readme",
   "dependencies": {
     "es6-promise": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   }
 }
