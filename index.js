@@ -83,8 +83,7 @@ module.exports = function (data) {
 				eot["eudcFontData"] = eudcFontData;
 			}
 		}
-
-		eot["fontData"] = data.slice(data.length - eot.fontDataSize, data.length);
+		//eot["fontData"] = data.slice(data.length - eot.fontDataSize, data.length);
 		
 		resolve(eot);
 	});
