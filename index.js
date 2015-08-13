@@ -2,7 +2,6 @@ var fs = require('fs');
 var Promise = global.Promise || require('es6-promise').Promise;
 var panose = require('./lib/panose.js');
 var charset = require('./lib/charset.js');
-var weight = require('./lib/weight.js');
 var type = require('./lib/type.js');
 var unicodeRange1 = require('./lib/unicoderange/unicoderange1.js');
 var unicodeRange2 = require('./lib/unicoderange/unicoderange2.js');
@@ -12,6 +11,18 @@ var codePageRange1 = require('./lib/codepagerange/codepagerange1.js');
 var codePageRange2 = require('./lib/codepagerange/codepagerange2.js');
 
 module.exports = function (data) {
+	if (typeof data === 'string') {
+		return new Promise(function (resolve, reject) {
+			fs.readFile(data, function (error, rawdata) {
+				if (error) {
+					reject(error);
+				} else {
+					resolve(module.exports(rawdata));
+				}
+			});
+		});
+	}
+
 	return new Promise(function (resolve, reject) {
 		var magicNumber = data.readUInt16LE(34);
 		var version = data.readUInt32LE(8);
@@ -34,7 +45,7 @@ module.exports = function (data) {
 			panose: panose(data.slice(16, 26)),
 			charset: charset(data[26]),
 			italic: data[27] == 0x01,
-			weight: weight(data.readUInt32LE(28)),
+			weight: data.readUInt32LE(28),
 			type: type(data.readUInt16LE(32)),
 			unicodeRange1: unicodeRange1(data.readUInt32LE(36)),
 			unicodeRange2: unicodeRange2(data.readUInt32LE(40)),
