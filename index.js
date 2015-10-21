@@ -1,5 +1,5 @@
 var fs = require('fs');
-var Promise = global.Promise || require('es6-promise').Promise;
+var Promise = require('pinkie-promise');
 var panose = require('./lib/panose.js');
 var charset = require('./lib/charset.js');
 var weight = require('./lib/weight.js');

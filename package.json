@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/andyjansson/eot-parser#readme",
   "dependencies": {
-    "es6-promise": "^2.3.0"
+    "pinkie-promise": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5"
