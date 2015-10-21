@@ -1,4 +1,3 @@
-var fs = require('fs');
 var Promise = require('pinkie-promise');
 var panose = require('./lib/panose.js');
 var charset = require('./lib/charset.js');
