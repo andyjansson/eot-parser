@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "EOT font parser",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "scripts": {
     "test": "mocha"
   },
