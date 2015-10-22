@@ -25,9 +25,6 @@
     "url": "https://github.com/andyjansson/eot-parser/issues"
   },
   "homepage": "https://github.com/andyjansson/eot-parser#readme",
-  "dependencies": {
-    "pinkie-promise": "^1.0.0"
-  },
   "devDependencies": {
     "mocha": "^2.2.5"
   }
